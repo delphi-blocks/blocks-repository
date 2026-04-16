@@ -1,0 +1,38 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "paolo-rossi.delphi-neon",
+  "name": "Delphi-Neon",
+  "version": "2.1.0",
+  "description": "JSON Serialization library for Delphi",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/paolo-rossi/delphi-neon",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/paolo-rossi/delphi-neon/tree/v2.1.0"
+  },
+  "author": "Paolo Rossi",
+  "keywords": ["json", "Serialization"],
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "name": "Neon",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi101": "10.1Berlin",
+      "delphi102": "10.2Tokyo",
+      "delphi103": "10.3Rio",
+      "delphi104": "10.4Sydney",
+	  "delphi11": "11.0Alexandria",
+	  "delphi12+": "12.0Athens"
+    }
+  }
+}

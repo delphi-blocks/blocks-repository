@@ -1,0 +1,39 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "paolo-rossi.openapi-delphi",
+  "name": "OpenAPI-Delphi",
+  "version": "2.2.0",
+  "description": "OpenAPI 3.0 document generator and parser for Delphi",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/paolo-rossi/OpenAPI-Delphi",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/paolo-rossi/OpenAPI-Delphi/tree/v2.2.0"
+  },
+  "author": "Paolo Rossi",
+  "keywords": ["OpenAPI", "swagger", "JSON"],
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "name": "OpenAPI",
+      "type": [
+        "runtime"
+      ]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi102": "10.2Tokyo",
+      "delphi103": "10.3Rio",
+      "delphi104": "10.4Sydney",
+	  "delphi11": "11.0Alexandria",
+	  "delphi12+": "12.0Athens"
+    }
+  }
+}

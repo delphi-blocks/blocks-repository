@@ -1,0 +1,41 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "paolo-rossi.delphi-jose-jwt",
+  "name": "delphi-jose-jwt",
+  "version": "3.3.1",
+  "description": "Delphi implementation of JOSE and JWT",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/paolo-rossi/delphi-jose-jwt",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/paolo-rossi/delphi-jose-jwt/tree/v3.3.1"
+  },
+  "author": "Paolo Rossi",
+  "keywords": ["jose", "jwt", "api", "server"],
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source\\Common",
+        "Source\\JOSE"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "JOSE",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi102": "10.2Tokyo",
+      "delphi103": "10.3Rio",
+      "delphi104": "10.4Sydney",
+	  "delphi11": "11.0Alexandria",
+	  "delphi12+": "12.0Athens"
+    }
+  }
+}
+

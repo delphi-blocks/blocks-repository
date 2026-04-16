@@ -1,0 +1,52 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "delphi-blocks.wirl",
+  "name": "WiRL",
+  "version": "4.6.0",
+  "description": "RESTful Library for Delphi",
+  "license": "Apache-2.0",
+  "homepage": "https://wirl.delphi-blocks.dev",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/delphi-blocks/WiRL/tree/v4.6.0"
+  },
+  "author": "Paolo Rossi, Luca Minuti <info@lucaminuti.it>",
+  "keywords": ["rest", "http", "api", "server", "client"],
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source\\Core",
+        "Source\\Data",
+        "Source\\Extensions",
+        "Source\\Client"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "WiRL",
+      "type": ["runtime"]
+    },
+    {
+      "name": "WiRLDesign",
+      "type": ["designtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi101": "10.1Berlin",
+      "delphi102": "10.2Tokyo",
+      "delphi103": "10.3Rio",
+      "delphi104": "10.4Sydney",
+	  "delphi11": "11.0Alexandria",
+	  "delphi12+": "12.0Athens"
+    }
+  },
+  "dependencies": {
+    "paolo-rossi.delphi-neon": "^3.1.0",
+    "paolo-rossi.delphi-jose-jwt": "^3.3.1",
+    "paolo-rossi.openapi-delphi": "^2.2.0"
+  }
+}
