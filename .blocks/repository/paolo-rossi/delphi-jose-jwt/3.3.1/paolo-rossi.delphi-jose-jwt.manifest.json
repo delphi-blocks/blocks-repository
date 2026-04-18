@@ -30,6 +30,7 @@
   ],
   "packageOptions": {
     "folders": {
+      "delphi101": "10.1Berlin",
       "delphi102": "10.2Tokyo",
       "delphi103": "10.3Rio",
       "delphi104": "10.4Sydney",

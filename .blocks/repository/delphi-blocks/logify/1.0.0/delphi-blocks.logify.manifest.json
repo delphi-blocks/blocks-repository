@@ -1,0 +1,35 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "delphi-blocks.logify",
+  "name": "Logify",
+  "version": "1.0.0",
+  "description": "Logify MetaLogger for Delphi",
+  "license": "MIT license",
+  "homepage": "https://github.com/delphi-blocks/Logify",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/delphi-blocks/Logify/commit/df7890955e377d75151fb2c2eaf88330320e3fbe"
+  },
+  "author": "Paolo Rossi",
+  "keywords": ["log", "filesystem"],
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "Logify",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+	  "delphi12+": ""
+    }
+  }
+}
