@@ -19,6 +19,12 @@
         "Source\\Common",
         "Source\\JOSE"
       ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source\\Common",
+        "Source\\JOSE"
+      ]
     }
   },
 

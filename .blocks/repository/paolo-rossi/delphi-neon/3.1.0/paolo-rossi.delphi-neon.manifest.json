@@ -8,12 +8,17 @@
   "homepage": "https://github.com/paolo-rossi/delphi-neon",
   "repository": {
     "type": "github",
-    "url": "https://github.com/paolo-rossi/delphi-neon/tree/v3.1.0"
+    "url": "https://github.com/paolo-rossi/delphi-neon/commit/a576d50073ef4c1036eef1d2e07d014e4d60483b"
   },
   "author": "Paolo Rossi",
   "keywords": ["json", "Serialization"],
   "platforms": {
     "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    },
+    "Win64": {
       "sourcePath": [
         "Source"
       ]
@@ -31,8 +36,7 @@
       "delphi102": "10.2Tokyo",
       "delphi103": "10.3Rio",
       "delphi104": "10.4Sydney",
-	  "delphi11": "11.0Alexandria",
-	  "delphi12+": "12.0Athens"
+	  "delphi11+": "11AndLater"
     }
   }
 }

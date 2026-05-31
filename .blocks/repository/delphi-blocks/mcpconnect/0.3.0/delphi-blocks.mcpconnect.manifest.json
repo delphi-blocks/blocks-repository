@@ -1,0 +1,43 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "delphi-blocks.mcpconnect",
+  "name": "MCPConnect",
+  "version": "0.3.0",
+  "description": "Delphi Library for MCP",
+  "license": "MIT license",
+  "homepage": "https://mcpconnect.delphiblocks.dev/",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/delphi-blocks/MCPConnect/commit/814ff3af8b6e7ea95980c55dadade2736ef533f0"
+  },
+  "author": "Paolo Rossi, Luca Minuti <info@lucaminuti.it>",
+  "keywords": ["MCP", "AI", "JSON-RPC", "server", "LLM"],
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "MCPConnect",
+      "type": ["runtime"]
+    },
+    {
+      "name": "MCPConnectVCL",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+	  "delphi11+": "11AndLater"
+    }
+  },
+  "dependencies": {
+    "paolo-rossi.delphi-neon": "^3.1.0",
+    "delphi-blocks.logify": "^1.0.0"
+  }
+}
