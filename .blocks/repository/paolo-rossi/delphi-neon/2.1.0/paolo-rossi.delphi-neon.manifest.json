@@ -17,6 +17,11 @@
       "sourcePath": [
         "Source"
       ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source"
+      ]
     }
   },
   "packages": [

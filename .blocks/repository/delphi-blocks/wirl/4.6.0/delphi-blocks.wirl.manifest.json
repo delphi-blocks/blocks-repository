@@ -21,6 +21,15 @@
         "Source\\Extensions",
         "Source\\Client"
       ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source\\Core",
+        "Source\\Data",
+        "Source\\Extensions",
+        "Source\\Client"
+      ],
+	  "runtimeOnly": true
     }
   },
 
