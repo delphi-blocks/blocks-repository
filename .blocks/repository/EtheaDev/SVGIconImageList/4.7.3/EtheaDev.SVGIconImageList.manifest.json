@@ -1,0 +1,72 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "EtheaDev.SVGIconImageList",
+  "name": "SVGIconImageList",
+  "version": "4.7.3",
+  "description": "Components to simplify use of SVG images",
+  "license": "Apache-2.0",
+  "homepage": "https://ethea.it/docs/svgiconimagelist/",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/EtheaDev/SVGIconImageList/tree/v4.7.3"
+  },
+  "author": "Ethea S.r.l.",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "SVGIconImageListRestClient",
+      "type": ["runtime"]
+    },
+    {
+      "name": "SVGImage32Package",
+      "type": ["runtime"]
+    },
+    {
+      "name": "SVGMagicPackage",
+      "type": ["runtime"]
+    },
+    {
+      "name": "SVGIconImageList",
+      "type": ["runtime"]
+    },
+    {
+      "name": "SVGIconImageListFMX",
+      "type": ["runtime", "FMX"]
+    },
+    {
+      "name": "dclSVGIconImageList",
+      "type": ["designtime"]
+    },
+    {
+      "name": "dclSVGIconImageListFMX",
+      "type": ["designtime", "FMX"]
+    },
+    {
+      "name": "dclSVGMagicPackage",
+      "type": ["designtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphixe6": "DXE6",
+      "delphixe7": "DXE7",
+      "delphixe8": "DXE8",
+      "delphi10": "D10",
+      "delphi101": "D10_1",
+      "delphi102": "D10_2",
+      "delphi103": "D10_3",
+      "delphi104": "D10_4",
+	  "delphi11": "D11",
+	  "delphi12": "D12",
+	  "delphi13": "D13"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "EtheaDev.StyledComponents",
+  "name": "StyledComponents",
+  "version": "4.2.1",
+  "description": "Components similar to Delphi VCL with Custom Graphic Styles, and an advanced, full-customizable TaskDialog, also with animations!",
+  "license": "Apache-2.0",
+  "homepage": "https://ethea.it/docs/styledcomponents/",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/EtheaDev/StyledComponents/tree/v4.2.1"
+  },
+  "author": "Ethea S.r.l.",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "StyledComponents",
+      "type": ["runtime"]
+    },
+    {
+      "name": "StyledAnimatedComponents",
+      "type": ["runtime"]
+    },
+    {
+      "name": "dclStyledComponents",
+      "type": ["designtime"]
+    },
+    {
+      "name": "dclStyledAnimatedComponents",
+      "type": ["designtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphixe6": "DXE6",
+      "delphixe7": "DXE7",
+      "delphixe8": "DXE8",
+      "delphi10": "D10",
+      "delphi101": "D10_1",
+      "delphi102": "D10_2",
+      "delphi103": "D10_3",
+      "delphi104": "D10_4",
+	  "delphi11": "D11",
+	  "delphi12": "D12",
+	  "delphi13": "D13"
+    }
+  },
+  "scripts": [{
+	  "description": "Copy res e dfm to DCU output directory",
+	  "event": "afterCompile",
+	  "command": "copyres"
+  }]
+}
