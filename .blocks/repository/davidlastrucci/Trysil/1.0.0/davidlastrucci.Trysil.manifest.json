@@ -1,0 +1,90 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "davidlastrucci.Trysil",
+  "name": "Trysil",
+  "version": "1.0.0",
+  "description": "A lightweight, attribute-driven ORM for Delphi",
+  "license": "BSD-3-Clause license",
+  "homepage": "https://github.com/davidlastrucci/Trysil",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/davidlastrucci/Trysil/tree/v1.0.0"
+  },
+  "author": "David Lastrucci",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Trysil",
+        "Trysil\\Data",
+        "Trysil\\Data\\SqlSyntax",
+        "Trysil\\Data\\FireDAC",
+        "Trysil.JSon",
+        "Trysil.Http",
+        "Trysil.Http\\Authentication",
+        "Trysil.Http\\Log",
+        "Trysil.Http\\MultiTenant",
+        "Trysil.UI"
+      ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Trysil",
+        "Trysil\\Data",
+        "Trysil\\Data\\SqlSyntax",
+        "Trysil\\Data\\FireDAC",
+        "Trysil.JSon",
+        "Trysil.Http",
+        "Trysil.Http\\Authentication",
+        "Trysil.Http\\Log",
+        "Trysil.Http\\MultiTenant",
+        "Trysil.UI"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "Trysil%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.JSon%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.Http%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.SQLite%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.FirebirdSQL%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.PostgreSQL%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Trysil.SqlServer%PACKAGE_VERSION%",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi103": "260",
+      "delphi104": "270",
+      "delphi11": "280",
+      "delphi12": "290",
+      "delphi13": "370"
+    }
+  },
+  "scripts": [{
+    "description": "Copy res e dfm to DCU output directory",
+    "event": "afterCompile",
+    "command": "copyres"
+  }]
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "TurboPack.Abbrevia",
+  "name": "Abbrevia",
+  "version": "0.0.0.20260530",
+  "description": "Abbrevia is a compression toolkit for Delphi and C++Builder",
+  "license": "MPL-1.1",
+  "homepage": "https://github.com/TurboPack/Abbrevia",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/TurboPack/Abbrevia/commit/283a1f2053433580e4932f84917ab1679d5e6f05"
+  },
+  "author": "TurboPack",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source",
+        "Source\\COM",
+        "Source\\Win32"
+      ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source",
+        "Source\\COM",
+        "Source\\Win64"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "AbbreviaD",
+      "type": ["runtime"]
+    },
+    {
+      "name": "AbbreviaVCLD",
+      "type": ["runtime"]
+    },
+    {
+      "name": "AbbreviaVCLDDesign",
+      "type": ["designtime"]
+    },
+    {
+      "name": "AbbreviaFMXDDesign",
+      "type": ["designtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi101": "Berlin\\Delphi",
+      "delphi102": "Tokyo\\Delphi",
+      "delphi103": "Rio\\Delphi",
+      "delphi104": "Sydney\\Delphi",
+	  "delphi11+": "11AndAbove\\Delphi"
+    }
+  },
+  "scripts": [{
+	  "description": "Copy res e dfm to DCU output directory",
+	  "event": "afterCompile",
+	  "command": "copyres"
+  }]
+}

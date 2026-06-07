@@ -1,0 +1,57 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "taurustls_developers.taurustls",
+  "name": "TaurusTLS",
+  "version": "1.0.8.49",
+  "description": "TaurusTLS provides OpenSSL 3.x and 4.x support for Indy - Internet Direct",
+  "license": "MPL-1.1",
+  "homepage": "https://github.com/TaurusTLS-Developers/TaurusTLS",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/TaurusTLS-Developers/TaurusTLS/tree/1.0.8.49"
+  },
+  "author": "JPeterMugaas",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source",
+        "Source\\Extra"
+      ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source",
+        "Source\\Extra"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "TaurusTLS_RT",
+      "type": ["runtime"]
+    },
+    {
+      "name": "TaurusTLS_DT",
+      "type": ["designtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi10": "dseattle",
+      "delphi101": "dberlin",
+      "delphi102": "dtokyo",
+      "delphi103": "drio",
+      "delphi104": "dsydney",
+	  "delphi11": "d11",
+	  "delphi12": "d12",
+	  "delphi13": "d13"
+    }
+  },
+  "scripts": [{
+	  "description": "Copy res e dfm to DCU output directory",
+	  "event": "afterCompile",
+	  "command": "copyres"
+  }]
+}

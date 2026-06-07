@@ -17,6 +17,11 @@
       "sourcePath": [
         "Source"
       ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source"
+      ]
     }
   },
 
@@ -39,7 +44,8 @@
     },
     {
       "name": "SVGIconImageListFMX",
-      "type": ["runtime", "FMX"]
+      "type": ["runtime", "FMX"],
+	  "products": ["delphi103+"]
     },
     {
       "name": "dclSVGIconImageList",
@@ -47,7 +53,8 @@
     },
     {
       "name": "dclSVGIconImageListFMX",
-      "type": ["designtime", "FMX"]
+      "type": ["designtime", "FMX"],
+	  "products": ["delphi103+"]
     },
     {
       "name": "dclSVGMagicPackage",

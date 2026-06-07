@@ -1,0 +1,105 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "sglienke.spring4d",
+  "name": "Spring4D",
+  "version": "2.0.2",
+  "description": "Spring4D is an open-source code library for Embarcadero Delphi XE and higher. It consists of a number of different modules that contain a base class library (common types, interface based collection types, reflection extensions) and a dependency injection framework. It uses the Apache License 2.0.",
+  "license": "Apache-2.0",
+  "homepage": "https://bitbucket.org/sglienke/spring4d/src/master/",
+  "repository": {
+    "type": "bitbucket",
+    "url": "https://bitbucket.org/sglienke/spring4d/src/2.0.2/"
+  },
+  "author": "Stefan Glienke",
+
+  "platforms": {
+    "Win32": {
+      "sourcePath": [
+        "Source\\Base",
+        "Source\\Base\\Collections",
+        "Source\\Base\\Logging",
+        "Source\\Base\\Patches",
+        "Source\\Base\\Patterns",
+        "Source\\Core\\Container",
+        "Source\\Core\\Interception",
+        "Source\\Core\\Logging",
+        "Source\\Core\\Mocking",
+        "Source\\Core\\Services",
+        "Source\\Data\\ObjectDataSet",
+        "Source\\Extensions\\Cryptography",
+        "Source\\Extensions\\Utils",
+        "Source\\Persistence\\Adapters",
+        "Source\\Persistence\\Core",
+        "Source\\Persistence\\Criteria",
+        "Source\\Persistence\\Mapping",
+        "Source\\Persistence\\SQL"
+      ]
+    },
+    "Win64": {
+      "sourcePath": [
+        "Source\\Base",
+        "Source\\Base\\Collections",
+        "Source\\Base\\Logging",
+        "Source\\Base\\Patches",
+        "Source\\Base\\Patterns",
+        "Source\\Core\\Container",
+        "Source\\Core\\Interception",
+        "Source\\Core\\Logging",
+        "Source\\Core\\Mocking",
+        "Source\\Core\\Services",
+        "Source\\Data\\ObjectDataSet",
+        "Source\\Extensions\\Cryptography",
+        "Source\\Extensions\\Utils",
+        "Source\\Persistence\\Adapters",
+        "Source\\Persistence\\Core",
+        "Source\\Persistence\\Criteria",
+        "Source\\Persistence\\Mapping",
+        "Source\\Persistence\\SQL"
+      ]
+    }
+  },
+
+  "packages": [
+    {
+      "name": "Spring.Base",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Spring.Core",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Spring.Data",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Spring.Data.Designtime",
+      "type": ["designtime"]
+    },
+    {
+      "name": "Spring.Persistence",
+      "type": ["runtime"]
+    },
+    {
+      "name": "Spring.Extensions",
+      "type": ["runtime"]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi10": "Delphi10Seattle",
+      "delphi101": "Delphi10Berlin",
+      "delphi102": "Delphi10Tokyo",
+      "delphi103": "Delphi10Rio",
+      "delphi104": "Delphi10Sydney",
+	  "delphi11": "Delphi11",
+	  "delphi12": "Delphi12",
+	  "delphi13": "Delphi13"
+    }
+  },
+  "scripts": [{
+	  "description": "Copy res e dfm to DCU output directory",
+	  "event": "afterCompile",
+	  "command": "copyres"
+  }]
+}
