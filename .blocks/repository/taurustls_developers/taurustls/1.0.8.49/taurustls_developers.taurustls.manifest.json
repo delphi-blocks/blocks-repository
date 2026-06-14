@@ -24,6 +24,12 @@
         "Source",
         "Source\\Extra"
       ]
+    },
+    "Linux64": {
+      "sourcePath": [
+        "Source",
+        "Source\\Extra"
+      ]
     }
   },
 

@@ -45,31 +45,31 @@
 
   "packages": [
     {
-      "name": "Trysil%PACKAGE_VERSION%",
+      "name": "Trysil$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.JSon%PACKAGE_VERSION%",
+      "name": "Trysil.JSon$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.Http%PACKAGE_VERSION%",
+      "name": "Trysil.Http$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.SQLite%PACKAGE_VERSION%",
+      "name": "Trysil.SQLite$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.FirebirdSQL%PACKAGE_VERSION%",
+      "name": "Trysil.FirebirdSQL$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.PostgreSQL%PACKAGE_VERSION%",
+      "name": "Trysil.PostgreSQL$(PACKAGE_VERSION)",
       "type": ["runtime"]
     },
     {
-      "name": "Trysil.SqlServer%PACKAGE_VERSION%",
+      "name": "Trysil.SqlServer$(PACKAGE_VERSION)",
       "type": ["runtime"]
     }
   ],
@@ -83,6 +83,15 @@
     }
   },
   "scripts": [{
+    "description": "Compile Trysil expert",
+    "event": "afterInstall",
+    "command": "expert",
+	"args": {
+		"projectFile": "Trysil.Expert\\Trysil.Expert$(PACKAGE_VERSION).dproj", 
+		"description": "Trysil Expert",
+		"platforms": ["Win32","Win64"]
+	}
+  },{
     "description": "Copy res e dfm to DCU output directory",
     "event": "afterCompile",
     "command": "copyres"

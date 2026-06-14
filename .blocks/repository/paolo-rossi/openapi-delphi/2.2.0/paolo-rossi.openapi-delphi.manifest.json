@@ -22,6 +22,11 @@
       "sourcePath": [
         "Source"
       ]
+    },
+    "Linux64": {
+      "sourcePath": [
+        "Source"
+      ]
     }
   },
   "packages": [

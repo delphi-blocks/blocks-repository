@@ -56,6 +56,28 @@
         "Source\\Persistence\\Mapping",
         "Source\\Persistence\\SQL"
       ]
+    },
+    "Linux64": {
+      "sourcePath": [
+        "Source\\Base",
+        "Source\\Base\\Collections",
+        "Source\\Base\\Logging",
+        "Source\\Base\\Patches",
+        "Source\\Base\\Patterns",
+        "Source\\Core\\Container",
+        "Source\\Core\\Interception",
+        "Source\\Core\\Logging",
+        "Source\\Core\\Mocking",
+        "Source\\Core\\Services",
+        "Source\\Data\\ObjectDataSet",
+        "Source\\Extensions\\Cryptography",
+        "Source\\Extensions\\Utils",
+        "Source\\Persistence\\Adapters",
+        "Source\\Persistence\\Core",
+        "Source\\Persistence\\Criteria",
+        "Source\\Persistence\\Mapping",
+        "Source\\Persistence\\SQL"
+      ]
     }
   },
 

@@ -25,6 +25,12 @@
         "Source\\Common",
         "Source\\JOSE"
       ]
+    },
+    "Linux64": {
+      "sourcePath": [
+        "Source\\Common",
+        "Source\\JOSE"
+      ]
     }
   },
 
