@@ -14,12 +14,7 @@
   "keywords": ["log", "filesystem"],
 
   "platforms": {
-    "Win32": {
-      "sourcePath": [
-        "Source"
-      ]
-    },
-    "Win64": {
+    "Win32,Win64": {
       "sourcePath": [
         "Source"
       ]

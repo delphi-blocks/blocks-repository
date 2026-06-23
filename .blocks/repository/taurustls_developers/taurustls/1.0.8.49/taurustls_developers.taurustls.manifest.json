@@ -13,19 +13,7 @@
   "author": "JPeterMugaas",
 
   "platforms": {
-    "Win32": {
-      "sourcePath": [
-        "Source",
-        "Source\\Extra"
-      ]
-    },
-    "Win64": {
-      "sourcePath": [
-        "Source",
-        "Source\\Extra"
-      ]
-    },
-    "Linux64": {
+    "Win32,Win64,Linux64": {
       "sourcePath": [
         "Source",
         "Source\\Extra"

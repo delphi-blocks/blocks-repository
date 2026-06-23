@@ -14,12 +14,7 @@
   "keywords": ["MCP", "AI", "JSON-RPC", "server", "LLM"],
 
   "platforms": {
-    "Win32": {
-      "sourcePath": [
-        "Source"
-      ]
-    },
-    "Win64": {
+    "Win32,Win64": {
       "sourcePath": [
         "Source"
       ]

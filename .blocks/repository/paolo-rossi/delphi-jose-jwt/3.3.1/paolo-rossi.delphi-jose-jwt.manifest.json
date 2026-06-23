@@ -14,19 +14,7 @@
   "keywords": ["jose", "jwt", "api", "server"],
 
   "platforms": {
-    "Win32": {
-      "sourcePath": [
-        "Source\\Common",
-        "Source\\JOSE"
-      ]
-    },
-    "Win64": {
-      "sourcePath": [
-        "Source\\Common",
-        "Source\\JOSE"
-      ]
-    },
-    "Linux64": {
+    "Win32,Win64,Linux64": {
       "sourcePath": [
         "Source\\Common",
         "Source\\JOSE"
