@@ -1,0 +1,45 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "marcobreveglieri.awtrix4d",
+  "name": "AWTrix4D",
+  "version": "1.0.0",
+  "description": "Native Delphi client library for the AWTrix 3 HTTP REST API (Ulanzi TC001 smart pixel clock)",
+  "license": "MIT",
+  "homepage": "https://github.com/marcobreveglieri/AWTrix4D",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/marcobreveglieri/AWTrix4D/tree/v1.0.0"
+  },
+  "author": "Marco Breveglieri",
+  "keywords": [
+    "delphi",
+    "awtrix",
+    "awtrix3",
+    "ulanzi",
+    "desktop-clock",
+    "tc001",
+    "internet-of-things",
+    "rest",
+    "http-client"
+  ],
+  "platforms": {
+    "Win32,Win64,Win64x,Linux64": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "name": "AWTrix4D",
+      "type": [
+        "runtime"
+      ]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi11+": "..\\Source"
+    }
+  }
+}
