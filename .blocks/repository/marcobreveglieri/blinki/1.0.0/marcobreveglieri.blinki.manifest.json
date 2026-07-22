@@ -2,33 +2,41 @@
   "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
   "id": "marcobreveglieri.blinki",
   "name": "Blinki",
-  "version": "0.0.0.20260611",
+  "version": "1.0.0",
   "description": "A library for modern, beautiful Text User Interfaces (TUIs) for Delphi",
-  "license": "MIT license",
-  "homepage": "https://github.com/marcobreveglieri/blinki",
+  "license": "MIT",
+  "homepage": "https://github.com/marcobreveglieri/Blinki",
   "repository": {
     "type": "github",
-    "url": "https://github.com/marcobreveglieri/blinki/commit/997a6add15f47ca1dc01793a5f8eb907eddd0103"
+    "url": "https://github.com/marcobreveglieri/Blinki/tree/v1.0.0"
   },
   "author": "Marco Breveglieri",
-
+  "keywords": [
+    "delphi",
+    "tui",
+    "terminal",
+    "console",
+    "text user interface",
+    "text ui"
+  ],
   "platforms": {
-    "Win32,Win64": {
+    "Win32,Win64,Win64x,Linux64": {
       "sourcePath": [
         "Source"
-	  ]
+      ]
     }
   },
-
   "packages": [
     {
       "name": "Blinki",
-      "type": ["runtime"]
+      "type": [
+        "runtime"
+      ]
     }
   ],
   "packageOptions": {
     "folders": {
-      "delphi13+": "..\\Source"
+      "delphi11+": "..\\Source"
     }
   }
 }
