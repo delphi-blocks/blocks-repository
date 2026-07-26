@@ -1,0 +1,45 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "marcobreveglieri.murphy-delphi",
+  "name": "Murphy for Delphi",
+  "version": "1.0.0",
+  "description": "Chaos Engineering library with resilience and fault-tolerance patterns for Delphi",
+  "license": "MIT",
+  "homepage": "https://github.com/marcobreveglieri/Murphy-Delphi",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/marcobreveglieri/Murphy-Delphi/tree/v1.0.0"
+  },
+  "author": "Marco Breveglieri",
+  "keywords": [
+    "delphi",
+    "chaos-engineering",
+    "resilience",
+    "fault-tolerance",
+    "retry",
+    "circuit-breaker",
+    "bulkhead",
+    "timeout",
+    "fallback"
+  ],
+  "platforms": {
+    "Win32,Win64,Win64x,Linux64,OSX64,OSXARM64,Android,Android64,iOSDevice64,iOSSimARM64": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "name": "Murphy",
+      "type": [
+        "runtime"
+      ]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi11+": "..\\Source"
+    }
+  }
+}

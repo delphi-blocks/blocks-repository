@@ -1,0 +1,43 @@
+{
+  "$schema": "https://delphi-blocks.dev/schema/package.v1.json",
+  "id": "marcobreveglieri.prometheus-client-delphi",
+  "name": "Prometheus Client for Delphi",
+  "version": "1.0.0",
+  "description": "Prometheus Client library for Embarcadero Delphi",
+  "license": "MIT",
+  "homepage": "https://github.com/marcobreveglieri/prometheus-client-delphi",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/marcobreveglieri/prometheus-client-delphi/tree/v1.0.0"
+  },
+  "author": "Marco Breveglieri",
+  "keywords": [
+    "delphi",
+    "prometheus",
+    "metrics",
+    "monitoring",
+    "observability",
+    "grafana",
+    "opentelemetry"
+  ],
+  "platforms": {
+    "Win32,Win64,Win64x,Linux64": {
+      "sourcePath": [
+        "Source"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "name": "Prometheus.Client.Core",
+      "type": [
+        "runtime"
+      ]
+    }
+  ],
+  "packageOptions": {
+    "folders": {
+      "delphi11+": "..\\Source"
+    }
+  }
+}
